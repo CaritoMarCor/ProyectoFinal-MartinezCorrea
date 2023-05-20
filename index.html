@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia al css -->
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- Referencia al fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Librería de animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Calendario</title>
+</head>
+<body class="animate__animated animate__fadeIn">
+    <div class="container">
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fa fa-angle-left prev"></i>
+                    <div class="date"></div>
+                    <i class="fa fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>dom</div>
+                    <div>lun</div>
+                    <div>mar</div>
+                    <div>mie</div>
+                    <div>jue</div>
+                    <div>vie</div>
+                    <div>sab</div>
+                </div>
+                <div class="days">
+                    <!-- Se añaden los días con JS -->
+                </div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input">
+                        <button class="goto-btn">Ir</button>
+                    </div>
+                    <button class="today-btn">Hoy</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="today-date">
+                <div class="event-day">Lun</div>
+                <div class="event-date">15 Mayo 2023</div>
+            </div>
+            <div class="events">
+                <!-- Se añaden los eventos a través del JS -->
+            </div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Añadir Evento</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input id="event-name" type="text" placeholder="Nombre del Evento" class="event-name"> /
+                        >
+                    </div>
+                    <div class="add-event-input">
+                        <input id="event-time-from" type="text" placeholder="Hora Inicio" class="event-time-from"> /
+                        >
+                    </div>
+                    <div class="add-event-input">
+                        <input id="event-time-to" type="text" placeholder="Hora Término" class="event-time-to"> /
+                        >
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Añadir</button>
+                </div>
+            </div>
+        </div>
+        <button class="add-event">
+            <i class="fas fa-plus"></i>
+        </button>      
+    </div>
+    <!-- Referencia al scrip -->
+    <!-- <script src="resoruces/script.js"></script> -->
+    <script src="src/app.js"></script>
+</body>
+</html>
